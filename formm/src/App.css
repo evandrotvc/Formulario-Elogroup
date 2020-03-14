@@ -1,0 +1,23 @@
+#app { /*Estiliza o <div id = "app">*/
+  max-width: 1200px; /*Largura máxima, pra sempre tudo ficar sempre centralizado*/
+  margin: 0 auto;
+  padding: 60px , 30px; /*60px (cima e baixo) e (30px direita e esquerda)*/
+
+  display: flex;
+  align-items: flex-start; /* Faz que fique alinhado ao topo, ao inves de preencher toda a tela*/
+}
+
+
+/*Se o usuario encurtrar o comprimento da tela < 1000px , será exibido os devs embaixo do cadastro*/
+@media (max-width: 800px){
+  #app{
+      flex-direction: column;
+  }
+  #app main{ /*se <800px , precisa ajustar novamente as barras, se nao ficam sobrepostas*/
+      margin-left: 0px;
+      margin-top: 30px;
+  }
+  #app aside {
+      width: 100%;
+  }
+}

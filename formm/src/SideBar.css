@@ -1,0 +1,66 @@
+
+aside {
+    width: 320px;
+    background: #FFF;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    padding: 30px 20px; 
+  }
+  
+  aside form{
+    margin-top: 30px;
+  }
+aside form label {
+    font-size: 13px; 
+    
+  }
+  aside form.inputs-config {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    color: #acacac;
+    font-size: 3px;
+    font-weight: bold;
+    display: block;
+  }
+
+  aside form .inputs-config  input{
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    color: #666;
+    border: 2;
+    border-bottom: 1px solid #eee;
+  }
+
+  aside form .Select_control  input{
+      margin-top: 5px;
+      width: 12px;
+  }
+
+  aside form .Select_control  label{
+    font-size: 13px;
+    margin-right: 15px;
+}
+aside form .Select_control_rede  label{
+    font-size: 13px;
+    margin-right: 15px;
+}
+  /*Aplica só para o botao submit*/
+aside form button[type = "submit"]{
+    width: 100%;
+    border: 0;
+    margin-top: 20px;
+    background: #7d40e7;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 16px; /*configura cor da fonte "salvar"*/
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer; /*quando mouse em cima co botão, muda pra mãozinha*/
+    transition: background 0.5s;
+}
+/*Quando mouse estiver em cima do botão salvar, fica mais escuro*/
+aside form button[type = "submit"]:hover{
+    background: #6931ca;
+}
